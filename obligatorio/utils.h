@@ -8,5 +8,6 @@ int randomNumber(int minNum,int maxNum);
 
 int getMaxNumber(int number);
 
+int dispercion(long int ci);
 
 #endif // UTILS_H_INCLUDED

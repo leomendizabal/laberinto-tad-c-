@@ -10,3 +10,7 @@ int getMaxNumber(int number)
 {
     return ((number * number) - number) / 2;
 }
+
+int dispercion(long int ci){
+    return ci%100;
+}
