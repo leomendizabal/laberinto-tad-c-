@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-const int N = 10; /* cantidad de vertices */
+const int N = 6; /* cantidad de vertices */
 typedef int Grafo[N][N];
 
 void Crear(Grafo &g);
@@ -18,5 +18,9 @@ void InsertarArista(Grafo &g, int i,int j);
 int GradoVertice(Grafo g,int v);
 
 void ImprimirGrafo(Grafo g);
+
+int Distancia(Grafo G, int u, int v);
+
+void DFS(Grafo G, int actual, int v, bool visitado [N], int & dist);
 
 #endif // GRAFO_H_INCLUDED

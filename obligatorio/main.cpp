@@ -29,6 +29,13 @@ int main()
             EjecutarAccion(g,OPCION_MENU_3);
             break;
         case OPCION_MENU_4:
+            int v1, v2;
+            int dist;
+            dist = 0;
+            printf("Leeo 1:");scanf("%d",&v1);
+            printf("Leeo 2:");scanf("%d",&v2);
+            dist = Distancia(g,v1,v2);
+            printf("Distancia: %d \n",dist);
             break;
         case OPCION_MENU_5:
             break;
