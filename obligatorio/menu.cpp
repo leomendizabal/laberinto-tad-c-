@@ -83,7 +83,7 @@ void MenuPrincipal(int &opcion)
     scanf("%d",&opcion);
 }
 
-void EjecutarAccion(Grafo &g, int accion){
+void EjecutarAccion(Grafo &g, Diccionario &d, int accion){
     switch(accion)
     {
     case OPCION_MENU_1:
@@ -93,7 +93,7 @@ void EjecutarAccion(Grafo &g, int accion){
         MostrarLaberinto(g);
          break;
     case OPCION_MENU_3:
-        //RegistrarPersona(d);
+        RegistrarPersona(d);
         break;
     default:
          printf("Accion no soportada.\n");
