@@ -1,7 +1,7 @@
 #include "paseo.h"
 
 
-void CargarPaseo(paseo &p,int nro_p,int pto_ent,int pto_sal,int cant_p)
+void CargarPaseo(Paseo &p,int nro_p,int pto_ent,int pto_sal,int cant_p)
 {
     p.nro_paseo=nro_p;
     p.pto_entrada=pto_ent;
@@ -9,23 +9,23 @@ void CargarPaseo(paseo &p,int nro_p,int pto_ent,int pto_sal,int cant_p)
     p.cant_puntos=cant_p;
 }
 
-int DarNumero(paseo p)
+int DarNumero(Paseo p)
 {
    return p.nro_paseo;
 }
-int DarEntrada(paseo p)
+int DarEntrada(Paseo p)
 {
   return p.pto_entrada;
 }
-int DarSalida(paseo p)
+int DarSalida(Paseo p)
 {
   return p.pto_salida;
 }
-int DarCantPuntos(paseo p)
+int DarCantPuntos(Paseo p)
 {
    return p.cant_puntos;
 }
-void MostrarPaseo(paseo p)
+void MostrarPaseo(Paseo p)
 {
   printf("Numero paseo   : %d \n",p.nro_paseo);
   printf("Punto entrada  : %d \n",p.pto_entrada);
