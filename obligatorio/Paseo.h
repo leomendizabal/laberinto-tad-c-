@@ -7,18 +7,19 @@ typedef struct
                  int pto_entrada;
                  int pto_salida;
                  int cant_puntos;
-               } paseo;
+               } Paseo;
 
 
-void CargarPaseo(paseo &p,int nro_p,int pto_ent,int pto_sal,int cant_p);
+void CargarPaseo(Paseo &p,int nro_p,int pto_ent,int pto_sal,int cant_p);
 
-int DarNumero(paseo p);
+int DarNumero(Paseo p);
 
-int DarEntrada(paseo p);
+int DarEntrada(Paseo p);
 
-int DarSalida(paseo p);
+int DarSalida(Paseo p);
 
-int DarCantPuntos(paseo p);
+int DarCantPuntos(Paseo p);
 
+void MostrarPaseo(Paseo p);
 
 #endif // PASEO_H_INCLUDED
