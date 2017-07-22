@@ -6,7 +6,7 @@ void Make(Diccionario &d){
     }
 }
 
-bool Member(Diccionario d, int clave){
+bool Member(Diccionario d, long clave){
     bool result = false;
     int pos = dispercion(clave);
     Lista aux = d[pos];
@@ -29,10 +29,10 @@ void Insert(Diccionario &d, Persona p){
     aux = new nodo;
     aux->info = p;
     aux->sig = l;
-    l = aux;
+    d[pos] = aux;
 }
 
-Persona Find(Diccionario d, int clave){
+Persona Find(Diccionario d, long clave){
     int pos = dispercion(clave);
     Lista aux = d[pos];
 
@@ -54,7 +54,7 @@ void Modify(Diccionario &d, Persona p){
     aux->info = p;
 }
 
-void Delete(Diccionario &d, int clave){
+void Delete(Diccionario &d, long clave){
     int pos = dispercion(clave);
     Lista aux = d[pos];
 

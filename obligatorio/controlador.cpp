@@ -7,7 +7,7 @@ void LeerCantidadConexion(Grafo &g){
         printf("Ingrese cantidad de conexiones (0-Para salir): ");
         scanf("%d",&m);
         if(validarConexiones(m)){
-                salir = true;
+            salir = true;
             InicializarConexiones(g,m);
         }else{
             if(m != 0){
@@ -47,4 +47,23 @@ void InicializarConexiones(Grafo &g,int conexiones)
 
 bool validarConexiones(int m){
     return (m >= N && m <= getMaxNumber(N));
+}
+
+void RegistrarPersona(Diccionario &d){
+    long ci;
+    printf("Ingrese cedula: ");
+    scanf("%ld", &ci);
+
+    if(!Member(d, ci)){
+        Persona p;
+        string nombre;
+
+        strcrear(nombre);
+        printf("Ingrese nombre: ");
+        scan(nombre);
+        CrearPersona(p, ci, nombre);
+        Insert(d, p);
+    }else {
+        printf("Ya existe un usuario con esa cedula\n");
+    }
 }

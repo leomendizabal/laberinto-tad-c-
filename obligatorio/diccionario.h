@@ -14,9 +14,9 @@ const int MAX_P = 100;
 typedef Lista Diccionario[MAX_P];
 
 void Make(Diccionario &d);
-bool Member(Diccionario d, Persona p);
+bool Member(Diccionario d, long clave);
 void Insert(Diccionario &d, Persona p);
-Persona Find(Diccionario d, int clave);
+Persona Find(Diccionario d, long clave);
 void Modify(Diccionario &d, Persona p);
-void Delete(Diccionario &d, int clave);
+void Delete(Diccionario &d, long clave);
 #endif // DICCIONARIO_H_INCLUDED
