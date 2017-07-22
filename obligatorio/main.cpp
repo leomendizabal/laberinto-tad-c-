@@ -1,7 +1,8 @@
 #include <iostream>
 #include<stdio.h>
-
-#include"menu.h"
+#include<stdlib.h>
+#include<time.h>
+#include "menu.h"
 
 int main()
 {
