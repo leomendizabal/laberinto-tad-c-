@@ -1,4 +1,5 @@
-#include "Paseo.h"
+#include "paseo.h"
+
 
 void CargarPaseo(paseo &p,int nro_p,int pto_ent,int pto_sal,int cant_p)
 {
