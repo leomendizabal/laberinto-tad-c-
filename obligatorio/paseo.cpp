@@ -1,11 +1,15 @@
-#include "Paseo.h"
+#include "paseo.h"
 
-void CargarPaseo(paseo &p,int nro_p,int pto_ent,int pto_sal,int cant_p);
+void CargarPaseo(Paseo &p,int nro_p,int pto_ent,int pto_sal,int cant_p);
 
-int DarNumero(paseo p);
+int DarNumero(Paseo p);
 
-int DarEntrada(paseo p);
+int DarEntrada(Paseo p);
 
-int DarSalida(paseo p);
+int DarSalida(Paseo p);
 
-int DarCantPuntos(paseo p);
+int DarCantPuntos(Paseo p);
+
+void MostrarPaseo(Paseo p){
+
+}

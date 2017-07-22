@@ -1,17 +1,17 @@
 #include "persona.h"
 
-long int getCedula(persona p){
+long int getCedula(Persona p){
     return p.cedula;
 }
 
-string getNombre(persona p){
+string getNombre(Persona p){
     return p.nombre;
 }
 
-void setCedula(persona p, long int cedula){
+void setCedula(Persona p, long int cedula){
     p.cedula = cedula;
 }
 
-void setNombre(persona p, string nombre){
+void setNombre(Persona p, string nombre){
     p.nombre = nombre;
 }

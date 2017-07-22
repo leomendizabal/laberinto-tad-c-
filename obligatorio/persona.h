@@ -1,14 +1,14 @@
 #ifndef PERSONA_H_INCLUDED
 #define PERSONA_H_INCLUDED
-#include "string.h"
+#include "lista_paseos.h"
 
 typedef struct {
     long int cedula;
     string nombre;
-    //paseos
-} persona;
+    ListaPaseos paseos;
+} Persona;
 
-long int getCedula(persona p);
-string getNombre(persona p);
+long int getCedula(Persona p);
+string getNombre(Persona p);
 
 #endif // PERSONA_H_INCLUDED
