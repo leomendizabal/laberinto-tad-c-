@@ -6,6 +6,8 @@
 
 void LeerCantidadConexion(Grafo &g);
 
+void MostrarLaberinto(Grafo g);
+
 void InicializarConexiones(Grafo &g,int conexiones);
 
 bool validarConexiones(int m);

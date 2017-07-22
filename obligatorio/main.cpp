@@ -10,6 +10,7 @@ int main()
     bool salir = false;
     int opcion = -1;
     Grafo g;
+    //Diccionario d;
     Crear(g);
     //Inicializar random
     srand(time(NULL));
@@ -22,8 +23,10 @@ int main()
             EjecutarAccion(g,OPCION_MENU_1);
             break;
         case OPCION_MENU_2:
+            EjecutarAccion(g,OPCION_MENU_2);
             break;
         case OPCION_MENU_3:
+            EjecutarAccion(g,OPCION_MENU_3);
             break;
         case OPCION_MENU_4:
             break;

@@ -7,7 +7,7 @@ void MostrarEtiqueta(int indice)
     switch(indice)
     {
     case OPCION_MENU_1:
-        printf("");
+        printf("Generar conexiones.");
         break;
     case OPCION_MENU_2:
         printf("");
@@ -72,8 +72,8 @@ int ValidarIndice(int indice)
 
 void MenuPrincipal(int &opcion)
 {
-    printf("1. .\n");
-    printf("2. .\n");
+    printf("1. Generar conexiones.\n");
+    printf("2. Mostrar laberinto.\n");
     printf("3. .\n");
     printf("4. .\n");
     printf("5. .\n");
@@ -90,27 +90,14 @@ void EjecutarAccion(Grafo &g, int accion){
         LeerCantidadConexion(g);
         break;
     case OPCION_MENU_2:
-
+        MostrarLaberinto(g);
          break;
     case OPCION_MENU_3:
-
-         break;
-    case OPCION_MENU_4:
-
-         break;
-    case OPCION_MENU_5:
-
-         break;
-    case OPCION_MENU_6:
-
-         break;
-    case OPCION_MENU_7:
-
-         break;
+        //RegistrarPersona(d);
+        break;
     default:
-
+         printf("Accion no soportada.\n");
          break;
     }
-
-
 }
+

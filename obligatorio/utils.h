@@ -8,5 +8,6 @@ int randomNumber(int minNum,int maxNum);
 
 int getMaxNumber(int number);
 
+void ImprimirIndice(int n);
 
 #endif // UTILS_H_INCLUDED

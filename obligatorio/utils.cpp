@@ -10,3 +10,12 @@ int getMaxNumber(int number)
 {
     return ((number * number) - number) / 2;
 }
+
+void ImprimirIndice(int n){
+    printf("  |");
+    for(int i = 0; i < n; i++){
+       printf("%d|",i);
+    }
+    printf("\n\n");
+
+}

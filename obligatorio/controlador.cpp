@@ -2,14 +2,23 @@
 
 void LeerCantidadConexion(Grafo &g){
     int m = 0;
-    printf("Ingese cantidad de conexiones: ");
-    scanf("%d",m);
-    if(validarConexiones(m)){
-        InicializarConexiones(g,m);
-    }else{
-        printf("Tas de vivo muchacho");
-    }
+    do{
+        printf("Ingrese cantidad de conexiones (0-Para salir): ");
+        scanf("%d",&m);
+        if(validarConexiones(m)){
+            InicializarConexiones(g,m);
+        }else{
+            if(m != 0){
+              printf("Ingrese al menos %d conexiones.\n",N);
+            }
+        }
+    }while(m != 0);
 
+}
+
+void MostrarLaberinto(Grafo g){
+    ImprimirIndice(N);
+    ImprimirGrafo(g);
 }
 
 void InicializarConexiones(Grafo &g,int conexiones)
@@ -35,5 +44,5 @@ void InicializarConexiones(Grafo &g,int conexiones)
 }
 
 bool validarConexiones(int m){
-    return m > 0 && getMaxNumber(N);
+    return (m >= N && m <= getMaxNumber(N));
 }

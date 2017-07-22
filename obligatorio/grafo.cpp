@@ -42,6 +42,7 @@ int GradoVertice(Grafo g,int v){
 void ImprimirGrafo(Grafo g){
     for(int i=0; i<N; i++)
     {
+        printf("%d| ",i);
         for(int j=0; j<N; j++)
         {
              printf("%d ",g[i][j]);
