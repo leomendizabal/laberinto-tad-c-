@@ -86,39 +86,39 @@ void print(string s)
         i++;
     }
 }
-Boolean strmen(string s1,string s2)
+bool strmen(string s1,string s2)
 {
     int i=0;
-    Boolean Esmenor=FALSE,entro=FALSE;
+    bool Esmenor=false,entro=false;
     while(!Esmenor && s1[i]!='\0' && s2[i]!='\0')
     {
         if (s1[i]<s2[i])
         {
-            Esmenor=TRUE;
-            entro=TRUE;
+            Esmenor=true;
+            entro=true;
         }
         else
             i++;
     }
     if (Esmenor && entro)
-        Esmenor=TRUE;
+        Esmenor=true;
     else
-        Esmenor=FALSE;
+        Esmenor=false;
     return Esmenor;
 }
-Boolean streq(string s1,string s2)
+bool streq(string s1,string s2)
 {
     int i=0;
-    Boolean iguales=TRUE;
+    bool iguales=true;
     while(iguales && s1[i]!='\0' && s2[i]!='\0')
     {
         if (s1[i]!=s2[i])
-            iguales=FALSE;
+            iguales=false;
         else
             i++;
     }
     if (s1[i]!=s2[i])
-        iguales=FALSE;
+        iguales=false;
     return iguales;
 }
 
@@ -229,9 +229,9 @@ void strreverter(string in,string &out){
     strdestruir(aux);
 }
 
-Boolean strIsEnd(char c){
+bool strIsEnd(char c){
 
-    return (c == '\0') ? TRUE : FALSE;
+    return (c == '\0') ? true : false;
 
 }
 
@@ -239,23 +239,23 @@ int strIndexOf(string s,char c){
     int i=0;
     while((strIsEnd(s[i])) && (s[i] != c))
         i++;
-    return (strIsEnd(s[i]) == TRUE) ? 0 : i;
+    return (strIsEnd(s[i]) == true) ? 0 : i;
 
 }
 
-Boolean EsAlfabetico(string parametro)
+bool EsAlfabetico(string parametro)
 {
-    Boolean alfabetico=TRUE;
+    bool alfabetico=true;
    int i=0;
    while (alfabetico && (parametro[i]!='.') && (parametro[i]!='\0'))
           {
              if (((parametro[i]>='0') && (parametro[i]<='9'))  || (((parametro[i]<'a' || parametro[i]>'z') && (parametro[i]<'A' || parametro[i]>'Z'))))
-                   alfabetico=FALSE;
+                   alfabetico=false;
              else
                 i++;
           }
    if ((parametro[0]=='\0') || (((parametro[0]<'a' || parametro[0]>'z') && (parametro[0]<'A' || parametro[0]>'Z'))))
-        alfabetico=FALSE;
+        alfabetico=false;
    return alfabetico;
 }
 
