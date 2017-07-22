@@ -1,6 +1,5 @@
 #ifndef STRING_H_INCLUDED
 #define STRING_H_INCLUDED
-#include "boolean.h"
 #include <stdio.h>
 
 const int MAX=80;
@@ -22,9 +21,9 @@ void strswp(string &s1,string &s2);
 
 void print(string s);
 
-Boolean strmen(string s1,string s2);
+bool strmen(string s1,string s2);
 
-Boolean streq(string s1,string s2);
+bool streq(string s1,string s2);
 
 void strsplit(string s1, char c, string &s2);
 
@@ -42,11 +41,11 @@ void straddchar(string &s,char c);
 
 void strreverter(string in,string &out);
 
-Boolean strIsEnd(char c);
+bool strIsEnd(char c);
 
 int strIndexOf(string s,char c);
 
-Boolean EsAlfabetico(string parametro);
+bool EsAlfabetico(string parametro);
 
 void strtrimlast(string s1, string &s2);
 
