@@ -32,7 +32,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Paseo.cpp" />
+		<Unit filename="Paseo.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="string.cpp" />
+		<Unit filename="string.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
