@@ -82,3 +82,35 @@ void MenuPrincipal(int &opcion)
     printf("8. Salir del menu.\n");
     scanf("%d",&opcion);
 }
+
+void EjecutarAccion(Grafo &g, int accion){
+    switch(accion)
+    {
+    case OPCION_MENU_1:
+        LeerCantidadConexion(g);
+        break;
+    case OPCION_MENU_2:
+
+         break;
+    case OPCION_MENU_3:
+
+         break;
+    case OPCION_MENU_4:
+
+         break;
+    case OPCION_MENU_5:
+
+         break;
+    case OPCION_MENU_6:
+
+         break;
+    case OPCION_MENU_7:
+
+         break;
+    default:
+
+         break;
+    }
+
+
+}

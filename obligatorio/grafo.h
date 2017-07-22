@@ -19,5 +19,4 @@ int GradoVertice(Grafo g,int v);
 
 void ImprimirGrafo(Grafo g);
 
-
 #endif // GRAFO_H_INCLUDED
