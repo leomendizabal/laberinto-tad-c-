@@ -15,6 +15,11 @@ string getNombre(Persona p){
     return p.nombre;
 }
 
+ListaPaseos getLista(Persona p){
+    return p.paseos;
+
+}
+
 void setCedula(Persona &p, long int cedula){
     p.cedula = cedula;
 }

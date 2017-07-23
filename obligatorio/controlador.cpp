@@ -67,3 +67,16 @@ void RegistrarPersona(Diccionario &d){
         printf("Ya existe un usuario con esa cedula\n");
     }
 }
+
+void ListarPaseos(Diccionario d,long int ci){
+
+    if (Member(d,ci))
+    {
+        Persona per= Find(d,ci);
+        ListaPaseos lis=getLista(per);
+        MostrarLista(lis);
+    }
+    else
+        printf("La persona no existe\n");
+}
+
