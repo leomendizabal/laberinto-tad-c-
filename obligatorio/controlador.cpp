@@ -80,3 +80,13 @@ void ListarPaseos(Diccionario d,long int ci){
         printf("La persona no existe\n");
 }
 
+void PersonaMayorCantidadPaseos(Diccionario d){
+
+    if(!Empty(d)){
+        Persona maxWalker = GetMaxWalker(d);
+        printf("Persona que realizo mayor cantidad de paseos: \n");
+        Imprimir(maxWalker);
+    }else{
+        printf("No hay personas ingresadas");
+    }
+}

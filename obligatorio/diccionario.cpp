@@ -71,3 +71,29 @@ void Delete(Diccionario &d, long clave){
         delete temp;
     }
 }
+
+bool Empty(Diccionario d){
+    bool isEmpty = false;
+    int i=0;
+
+    while(i<MAX_P && !isEmpty){
+        if(d[i] != NULL)
+            isEmpty=true;
+
+        i++;
+    }
+
+    return isEmpty;
+}
+
+Persona GetMaxWalker(Diccionario d){
+    Persona maxWalker = d[0];
+
+    for(int i=0; i<MAX_P; i++){
+        if(CantidadPaseos(d[i])>CantidadPaseos(maxWalker)){
+            maxWalker = d[i];
+        }
+    }
+
+    return maxWalker;
+}

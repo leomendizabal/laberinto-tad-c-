@@ -21,4 +21,6 @@ void MostrarLista(ListaPaseos l);
 
 void EliminarLista(ListaPaseos &l);
 
+int DarTamanioLista(ListaPaseos l);
+
 #endif // LISTA_PASEOS_H_INCLUDED

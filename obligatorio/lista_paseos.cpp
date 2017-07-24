@@ -42,3 +42,15 @@ void EliminarLista(ListaPaseos &l){
         l=NULL;
     }
 }
+
+int DarTamanioLista(ListaPaseos l){
+    int total=0;
+    ListaPaseos aux = l;
+
+    while(aux != NULL){
+        total++;
+        aux = aux->sig;
+    }
+
+    return total;
+}
