@@ -21,4 +21,6 @@ int DarCantPuntos(Paseo p);
 
 void MostrarPaseo(Paseo p);
 
+bool HaySalida(Paseo p);
+
 #endif // PASEO_H_INCLUDED

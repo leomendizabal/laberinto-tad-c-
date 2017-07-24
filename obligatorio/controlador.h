@@ -15,4 +15,6 @@ bool validarConexiones(int m);
 
 void RegistrarPersona(Diccionario &d);
 
+void ListarPersonasPorPasos(Diccionario d);
+
 #endif // CONTROLADOR_H_INCLUDED

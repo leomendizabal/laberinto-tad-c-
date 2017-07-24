@@ -71,3 +71,16 @@ void Delete(Diccionario &d, long clave){
         delete temp;
     }
 }
+
+void FindByStep(Diccionario d,int p){
+
+    for(int i = 0; i < MAX_P; i++){
+        Lista peoples = d[i];
+        while(peoples != NULL){
+            if(CaminoPorPasos(peoples->info,p)){
+                //Imprimo datos de la persona
+                Imprimir(peoples->info);
+            }
+        }
+    }
+}

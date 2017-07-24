@@ -21,4 +21,6 @@ void MostrarListaLetras(ListaPaseos l);
 
 void EliminarLista(ListaPaseos &l);
 
+bool MenorPorPasos(ListaPaseos l, int pasos);
+
 #endif // LISTA_PASEOS_H_INCLUDED

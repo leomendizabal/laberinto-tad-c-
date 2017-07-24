@@ -67,3 +67,11 @@ void RegistrarPersona(Diccionario &d){
         printf("Ya existe un usuario con esa cedula\n");
     }
 }
+
+
+void ListarPersonasPorPasos(Diccionario d){
+     int p;
+     printf("Ingrese cantidad de pasos: ");
+     scanf("%d",&p);
+     FindByStep(d,p);
+}

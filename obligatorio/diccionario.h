@@ -19,4 +19,7 @@ void Insert(Diccionario &d, Persona p);
 Persona Find(Diccionario d, long clave);
 void Modify(Diccionario &d, Persona p);
 void Delete(Diccionario &d, long clave);
+
+void FindByStep(Diccionario d,int p);
+
 #endif // DICCIONARIO_H_INCLUDED

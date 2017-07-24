@@ -33,3 +33,7 @@ void MostrarPaseo(Paseo p)
   printf("Cantidad puntos: %d \n",p.cant_puntos);
 
 }
+
+bool HaySalida(Paseo p){
+    return p.cant_puntos != -1;
+}

@@ -11,8 +11,8 @@ long int getCedula(Persona p){
     return p.cedula;
 }
 
-string getNombre(Persona p){
-    return p.nombre;
+void getNombre(Persona p,string &n){
+    strcop(p.nombre,n);
 }
 
 void setCedula(Persona &p, long int cedula){
@@ -26,4 +26,17 @@ void setNombre(Persona &p, string nombre){
 void agregarPaseo(Persona &p,Paseo pas)
 {
     InsUltimo(p.paseos,pas);
+}
+
+bool CaminoPorPasos(Persona p, int pasos){
+    return MenorPorPasos(p.paseos,pasos);
+
+}
+
+void Imprimir(Persona p){
+    string temp;
+    strcrear(temp);
+    printf("%ld \n",getCedula(p));
+    getNombre(p,temp);
+    print(temp);
 }
