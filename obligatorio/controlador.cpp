@@ -75,3 +75,16 @@ void ListarPersonasPorPasos(Diccionario d){
      scanf("%d",&p);
      FindByStep(d,p);
 }
+
+void ListarPaseos(Diccionario d,long int ci){
+
+    if (Member(d,ci))
+    {
+        Persona per= Find(d,ci);
+        ListaPaseos lis=getLista(per);
+        MostrarLista(lis);
+    }
+    else
+        printf("La persona no existe\n");
+}
+

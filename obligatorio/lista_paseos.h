@@ -17,7 +17,7 @@ bool EsVacia(ListaPaseos l);
 
 void InsUltimo(ListaPaseos &l, Paseo info);
 
-void MostrarListaLetras(ListaPaseos l);
+void MostrarLista(ListaPaseos l);
 
 void EliminarLista(ListaPaseos &l);
 

@@ -25,11 +25,11 @@ void InsUltimo(ListaPaseos &l, Paseo info){
 
 }
 
-void MostrarListaLetras(ListaPaseos l){
+void MostrarLista(ListaPaseos l){
     while(l!= NULL)
     {
         MostrarPaseo(l->info);
-        printf(" ");
+        printf("\n");
         l= l->sig;
     }
 }

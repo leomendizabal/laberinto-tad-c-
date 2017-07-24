@@ -15,6 +15,11 @@ void getNombre(Persona p,string &n){
     strcop(p.nombre,n);
 }
 
+ListaPaseos getLista(Persona p){
+    return p.paseos;
+
+}
+
 void setCedula(Persona &p, long int cedula){
     p.cedula = cedula;
 }
