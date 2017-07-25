@@ -73,12 +73,12 @@ void Delete(Diccionario &d, long clave){
 }
 
 bool Empty(Diccionario d){
-    bool isEmpty = false;
+    bool isEmpty = true;
     int i=0;
 
     while(i<MAX_P && !isEmpty){
         if(d[i] != NULL)
-            isEmpty=true;
+            isEmpty=false;
 
         i++;
     }

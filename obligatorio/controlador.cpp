@@ -76,7 +76,10 @@ void ListarPersonasPorPasos(Diccionario d){
      FindByStep(d,p);
 }
 
-void ListarPaseos(Diccionario d,long int ci){
+void ListarPaseos(Diccionario d){
+    long int ci;
+    printf("Ingrese cedula: ");
+    scanf("ld", &ci);
 
     if (Member(d,ci))
     {
@@ -95,6 +98,6 @@ void PersonaMayorCantidadPaseos(Diccionario d){
         printf("Persona que realizo mayor cantidad de paseos: \n");
         Imprimir(maxWalker);
     }else{
-        printf("No hay personas ingresadas");
+        printf("No hay personas ingresadas\n");
     }
 }

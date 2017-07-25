@@ -17,7 +17,9 @@ void RegistrarPersona(Diccionario &d);
 
 void ListarPersonasPorPasos(Diccionario d);
 
-void ListarPaseos(Diccionario d,long int ci);
+void PersonaMayorCantidadPaseos(Diccionario d);
+
+void ListarPaseos(Diccionario d);
 
 
 #endif // CONTROLADOR_H_INCLUDED

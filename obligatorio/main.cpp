@@ -40,10 +40,13 @@ int main()
             printf("Distancia: %d \n",dist);
             break;
         case OPCION_MENU_5:
+            EjecutarAccion(g, d, OPCION_MENU_5);
             break;
         case OPCION_MENU_6:
+            EjecutarAccion(g, d, OPCION_MENU_6);
             break;
         case OPCION_MENU_7:
+            EjecutarAccion(g, d, OPCION_MENU_7);
             break;
         case OPCION_MENU_SALIR:
             salir = true;

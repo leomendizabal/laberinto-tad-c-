@@ -72,13 +72,13 @@ int ValidarIndice(int indice)
 
 void MenuPrincipal(int &opcion)
 {
-    printf("1. Generar conexiones.\n");
-    printf("2. Mostrar laberinto.\n");
-    printf("3. .\n");
-    printf("4. .\n");
-    printf("5. .\n");
-    printf("6. .\n");
-    printf("7. .\n");
+    printf("1. Generar conexiones\n");
+    printf("2. Mostrar laberinto\n");
+    printf("3. Registrar persona\n");
+    printf("4. Realizar paseo\n");
+    printf("5. Listar paseos\n");
+    printf("6. Persona con mayor cantidad de paseos\n");
+    printf("7. Listar personas con menor cantidad de pasos\n");
     printf("8. Salir del menu.\n");
     scanf("%d",&opcion);
 }
@@ -94,6 +94,12 @@ void EjecutarAccion(Grafo &g, Diccionario &d, int accion){
          break;
     case OPCION_MENU_3:
         RegistrarPersona(d);
+        break;
+    case OPCION_MENU_5:
+        ListarPaseos(d);
+        break;
+    case OPCION_MENU_6:
+        PersonaMayorCantidadPaseos(d);
         break;
     case OPCION_MENU_7:
         ListarPersonasPorPasos(d);
