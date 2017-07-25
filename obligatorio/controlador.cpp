@@ -68,6 +68,14 @@ void RegistrarPersona(Diccionario &d){
     }
 }
 
+
+void ListarPersonasPorPasos(Diccionario d){
+     int p;
+     printf("Ingrese cantidad de pasos: ");
+     scanf("%d",&p);
+     FindByStep(d,p);
+}
+
 void ListarPaseos(Diccionario d,long int ci){
 
     if (Member(d,ci))

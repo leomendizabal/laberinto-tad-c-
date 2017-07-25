@@ -22,5 +22,6 @@ void Delete(Diccionario &d, long clave);
 
 bool Empty(Diccionario d);
 Persona GetMaxWalker(Diccionario d);
+void FindByStep(Diccionario d,int p);
 
 #endif // DICCIONARIO_H_INCLUDED

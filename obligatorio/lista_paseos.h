@@ -23,4 +23,6 @@ void EliminarLista(ListaPaseos &l);
 
 int DarTamanioLista(ListaPaseos l);
 
+bool MenorPorPasos(ListaPaseos l, int pasos);
+
 #endif // LISTA_PASEOS_H_INCLUDED

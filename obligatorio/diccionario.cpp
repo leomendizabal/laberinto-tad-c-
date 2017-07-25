@@ -87,13 +87,30 @@ bool Empty(Diccionario d){
 }
 
 Persona GetMaxWalker(Diccionario d){
-    Persona maxWalker = d[0];
+    Persona maxWalker = d[0]->info;
 
     for(int i=0; i<MAX_P; i++){
-        if(CantidadPaseos(d[i])>CantidadPaseos(maxWalker)){
-            maxWalker = d[i];
+        Lista aux = d[i];
+        while(aux != NULL){
+            if(DarTamanioLista(getLista(aux->info))>DarTamanioLista(getLista(maxWalker))){
+                maxWalker = d[i]->info;
+            }
+
         }
     }
 
     return maxWalker;
+}
+
+void FindByStep(Diccionario d,int p){
+
+    for(int i = 0; i < MAX_P; i++){
+        Lista peoples = d[i];
+        while(peoples != NULL){
+            if(CaminoPorPasos(peoples->info,p)){
+                //Imprimo datos de la persona
+                Imprimir(peoples->info);
+            }
+        }
+    }
 }

@@ -54,3 +54,14 @@ int DarTamanioLista(ListaPaseos l){
 
     return total;
 }
+
+bool MenorPorPasos(ListaPaseos l, int pasos){
+    bool result = false;
+    while(l != NULL && !result){
+        if(HaySalida(l->info) && DarCantPuntos(l->info) < pasos){
+            result = true;
+        }
+        l= l->sig;
+    }
+    return result;
+}

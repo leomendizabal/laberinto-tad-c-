@@ -13,7 +13,7 @@ void CrearPersona(Persona &p,long int cedula,string nombre);
 
 long int getCedula(Persona p);
 
-string getNombre(Persona p);
+void getNombre(Persona p, string &n);
 
 ListaPaseos getLista(Persona p);
 
@@ -22,5 +22,9 @@ void setCedula(Persona &p, long int cedula);
 void setNombre(Persona &p, string nombre);
 
 void agregarPaseo(Persona &p,Paseo pas);
+
+bool CaminoPorPasos(Persona p, int pasos);
+
+void Imprimir(Persona p);
 
 #endif // PERSONA_H_INCLUDED
