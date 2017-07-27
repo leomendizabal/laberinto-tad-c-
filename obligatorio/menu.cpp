@@ -95,6 +95,9 @@ void EjecutarAccion(Grafo &g, Diccionario &d, int accion){
     case OPCION_MENU_3:
         RegistrarPersona(d);
         break;
+    case OPCION_MENU_4:
+        EjecutarCamino(g,d);
+        break;
     case OPCION_MENU_5:
         ListarPaseos(d);
         break;

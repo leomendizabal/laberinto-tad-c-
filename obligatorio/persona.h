@@ -6,6 +6,7 @@
 typedef struct {
     long int cedula;
     string nombre;
+    int cantp;
     ListaPaseos paseos;
 } Persona;
 
@@ -20,6 +21,10 @@ ListaPaseos getLista(Persona p);
 void setCedula(Persona &p, long int cedula);
 
 void setNombre(Persona &p, string nombre);
+
+void setCantP(Persona &p, int cantidad);
+
+int getCantP(Persona p);
 
 void agregarPaseo(Persona &p,Paseo pas);
 

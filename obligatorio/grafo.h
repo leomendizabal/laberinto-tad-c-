@@ -19,7 +19,7 @@ int GradoVertice(Grafo g,int v);
 
 void ImprimirGrafo(Grafo g);
 
-int Distancia(Grafo G, int u, int v);
+void RecorrerCamino(Grafo G, int u, int v, int &p);
 
 void DFS(Grafo G, int actual, int v, bool visitado [N], int & dist);
 

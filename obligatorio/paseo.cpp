@@ -1,9 +1,8 @@
 #include "paseo.h"
 
 
-void CargarPaseo(Paseo &p,int nro_p,int pto_ent,int pto_sal,int cant_p)
+void CargarPaseo(Paseo &p,int pto_ent,int pto_sal,int cant_p)
 {
-    p.nro_paseo=nro_p;
     p.pto_entrada=pto_ent;
     p.pto_salida=pto_sal;
     p.cant_puntos=cant_p;
@@ -13,6 +12,11 @@ int DarNumero(Paseo p)
 {
    return p.nro_paseo;
 }
+
+int CargarNumero(Paseo &p, int nro){
+    p.nro_paseo = nro;
+}
+
 int DarEntrada(Paseo p)
 {
   return p.pto_entrada;

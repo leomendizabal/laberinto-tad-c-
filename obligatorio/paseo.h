@@ -9,9 +9,11 @@ typedef struct
                  int cant_puntos;
                } Paseo;
 
-void CargarPaseo(Paseo &p,int nro_p,int pto_ent,int pto_sal,int cant_p);
+void CargarPaseo(Paseo &p,int pto_ent,int pto_sal,int cant_p);
 
 int DarNumero(Paseo p);
+
+int CargarNumero(Paseo &p, int nro);
 
 int DarEntrada(Paseo p);
 

@@ -62,38 +62,37 @@ void ImprimirGrafo(Grafo g)
 }
 
 
-int Distancia(Grafo G, int u, int v)
+void RecorrerCamino(Grafo G, int u, int v, int &p)
 {
     int dist = 0;
     bool visitado [N];
     for (int i = 0; i < N; i++)
         visitado [i] = false;
     DFS (G, u, v, visitado, dist);
-    for(int r = 0; r<N; r++){
-        if(visitado[r]){
-            printf("%d visitado\n",r);
-        }
+    if(visitado[v]){
+       p = dist;
+       printf("\n Cantiadad de pasos: %d \n",p);
+    }else{
+       p = -1;
+       printf("\n No se encontro la salida :( \n",p);
     }
-    return dist;
+
 }
 
 void DFS(Grafo G, int actual, int v, bool visitado [N], int & dist)
 {
     visitado [actual] = true;
-
     int j = 0;
 
     while (j < N && !visitado [v])
     {
-
         if (G [actual][j] == 1)
         {
             if (!visitado [j]){
-                printf("* {%d,%d} * ",actual,j);
+                printf(" {%d,%d}",actual,j);
                 dist++;
                 DFS (G, j, v, visitado, dist);
                 if (!(visitado [v])){
-                   printf("# vuelvo {%d,%d} # ",actual,j);
                    dist++;
                 }
 

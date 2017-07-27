@@ -101,3 +101,36 @@ void PersonaMayorCantidadPaseos(Diccionario d){
         printf("No hay personas ingresadas\n");
     }
 }
+
+void EjecutarCamino(Grafo g, Diccionario &d){
+        // Declaraciones
+        Persona p;
+        Paseo paseo;
+        long int cedula = 0;
+        bool existe = false;
+        int v1, v2;
+        int pasos;
+        pasos = 0;
+        do{
+            printf("Ingresa tu cedula: ");
+            scanf("%ld",&cedula);
+            existe = Member(d,cedula);
+            if(!existe){
+                printf("La cedula %ld no existe en sistema.\n",cedula);
+            }
+
+        }while(!existe && cedula != 0);
+        if(cedula != 0){
+            p = Find(d,cedula);
+
+            printf("Ingrese entrada:");scanf("%d",&v1);
+            printf("Ingresa salida:");scanf("%d",&v2);
+            RecorrerCamino(g,v1,v2,pasos);
+            CargarPaseo(paseo,v1,v2,pasos);
+            agregarPaseo(p,paseo);
+            Modify(d,p);
+
+        }
+
+
+}

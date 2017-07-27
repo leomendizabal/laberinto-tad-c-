@@ -21,5 +21,6 @@ void PersonaMayorCantidadPaseos(Diccionario d);
 
 void ListarPaseos(Diccionario d);
 
+void EjecutarCamino(Grafo g, Diccionario &d);
 
 #endif // CONTROLADOR_H_INCLUDED
