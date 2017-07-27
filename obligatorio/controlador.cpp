@@ -71,19 +71,23 @@ void RegistrarPersona(Diccionario &d){
 
 void ListarPersonasPorPasos(Diccionario d){
      int p;
-     printf("Ingrese cantidad de pasos: ");
-     scanf("%d",&p);
-     FindByStep(d,p);
+      if(!Empty(d)){
+         printf("Ingrese cantidad de pasos: ");
+         scanf("%d",&p);
+         FindByStep(d,p);
+      }else{
+        printf("No hay personas ingresadas\n");
+      }
 }
 
 void ListarPaseos(Diccionario d){
     long int ci;
     printf("Ingrese cedula: ");
-    scanf("ld", &ci);
+    scanf("%ld", &ci);
 
     if (Member(d,ci))
     {
-        Persona per= Find(d,ci);
+        Persona per = Find(d,ci);
         ListaPaseos lis=getLista(per);
         MostrarLista(lis);
     }

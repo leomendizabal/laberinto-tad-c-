@@ -13,7 +13,7 @@ long int getCedula(Persona p){
 }
 
 void getNombre(Persona p,string &n){
-    strcop(p.nombre,n);
+    strcop(n,p.nombre);
 }
 
 ListaPaseos getLista(Persona p){

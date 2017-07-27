@@ -76,7 +76,7 @@ bool Empty(Diccionario d){
     bool isEmpty = true;
     int i=0;
 
-    while(i<MAX_P && !isEmpty){
+    while(i<MAX_P && isEmpty){
         if(d[i] != NULL)
             isEmpty=false;
 
@@ -87,15 +87,24 @@ bool Empty(Diccionario d){
 }
 
 Persona GetMaxWalker(Diccionario d){
-    Persona maxWalker = d[0]->info;
+    Persona maxWalker;
+    int x=0;
+    bool existe= d[x] != NULL;
 
-    for(int i=0; i<MAX_P; i++){
+    while(!existe && x<MAX_P){
+        x++;
+        existe= d[x] != NULL;
+    }
+
+    maxWalker = d[x]-> info;
+
+    for(int i=x; i<MAX_P; i++){
         Lista aux = d[i];
         while(aux != NULL){
-            if(DarTamanioLista(getLista(aux->info))>DarTamanioLista(getLista(maxWalker))){
-                maxWalker = d[i]->info;
+            if(getCantP(aux->info)>getCantP(maxWalker)){
+                maxWalker = aux->info;
             }
-
+            aux = aux ->sig;
         }
     }
 
@@ -111,6 +120,7 @@ void FindByStep(Diccionario d,int p){
                 //Imprimo datos de la persona
                 Imprimir(peoples->info);
             }
+            peoples = peoples->sig;
         }
     }
 }
