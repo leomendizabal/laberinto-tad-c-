@@ -2,7 +2,7 @@
 #define UTILS_H_INCLUDED
 #include<stdlib.h>
 #include<time.h>
-#include "laberinto.h"
+#include<stdio.h>
 
 int randomNumber(int minNum,int maxNum);
 
