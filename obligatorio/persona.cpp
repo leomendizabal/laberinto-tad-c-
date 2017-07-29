@@ -56,4 +56,5 @@ void Imprimir(Persona p){
     printf("%ld \n",getCedula(p));
     getNombre(p,temp);
     print(temp);
+    printf("\n");
 }

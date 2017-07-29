@@ -43,7 +43,7 @@ void EliminarLista(ListaPaseos &l){
     }
 }
 
-int DarTamanioLista(ListaPaseos l){
+int Largo(ListaPaseos l){
     int total=0;
     ListaPaseos aux = l;
 

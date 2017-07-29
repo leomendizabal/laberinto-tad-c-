@@ -12,7 +12,7 @@ void LeerCantidadConexion(Laberinto &g){
             m = 0;
         }else{
             if(m != 0){
-              printf("Ingrese al menos %d conexiones.\n",N);
+              printf("Debe ingresar un numero entre %d y %d.\n",N,(N*N-N)/2);
             }else{
                 salir = true;
             }

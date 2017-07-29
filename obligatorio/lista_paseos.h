@@ -21,7 +21,7 @@ void MostrarLista(ListaPaseos l);
 
 void EliminarLista(ListaPaseos &l);
 
-int DarTamanioLista(ListaPaseos l);
+int Largo(ListaPaseos l);
 
 bool MenorPorPasos(ListaPaseos l, int pasos);
 

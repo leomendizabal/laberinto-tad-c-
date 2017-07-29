@@ -46,7 +46,7 @@ int main()
             salir = true;
             break;
         default:
-            printf("Opcion no implementada");
+            printf("Opcion no implementada\n");
             break;
         }
 
