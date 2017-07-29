@@ -83,7 +83,6 @@ void DFS(Laberinto G, int actual, int v, bool visitado [N], int & dist)
 {
     visitado [actual] = true;
     int j = 0;
-
     while (j < N && !visitado [v])
     {
         if (G [actual][j] == 1)
@@ -92,10 +91,11 @@ void DFS(Laberinto G, int actual, int v, bool visitado [N], int & dist)
                 printf(" {%d,%d}",actual,j);
                 dist++;
                 DFS (G, j, v, visitado, dist);
+
                 if (!(visitado [v])){
+                   printf(" {%d,%d}",j,actual);
                    dist++;
                 }
-
 
             }
 

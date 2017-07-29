@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-const int N = 6; /* cantidad de vertices */
+const int N = 7; /* cantidad de vertices */
 typedef int Laberinto[N][N];
 
 void Crear(Laberinto &g);
