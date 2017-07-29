@@ -1,8 +1,7 @@
 #ifndef DICCIONARIO_H_INCLUDED
 #define DICCIONARIO_H_INCLUDED
 #include <iostream>
-#include "utils.h"
-#include "persona.h"
+#include"persona.h"
 
 typedef struct nodoPe{
     Persona info;
@@ -23,5 +22,6 @@ void Delete(Personas &d, long clave);
 bool Empty(Personas d);
 Persona GetMaxWalker(Personas d);
 void FindByStep(Personas d,int p);
+int dispercion(long int ci);
 
 #endif // DICCIONARIO_H_INCLUDED

@@ -54,7 +54,8 @@ bool CaminoPorPasos(Persona p, int pasos){
 void Imprimir(Persona p){
     string temp;
     strcrear(temp);
-    printf("%ld \n",getCedula(p));
+    printf("Cedula: %ld \n",getCedula(p));
+    printf("Nombre: ");
     getNombre(p,temp);
     print(temp);
     printf("\n");

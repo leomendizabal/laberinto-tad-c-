@@ -10,6 +10,6 @@ int getMaxNumber(int number);
 
 void ImprimirIndice(int n);
 
-int dispercion(long int ci);
+
 
 #endif // UTILS_H_INCLUDED

@@ -20,6 +20,4 @@ void ImprimirIndice(int n){
     printf("\n");
 }
 
-int dispercion(long int ci){
-    return ci%100;
-}
+

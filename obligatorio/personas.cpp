@@ -124,3 +124,7 @@ void FindByStep(Personas d,int p){
         }
     }
 }
+
+int dispercion(long int ci){
+    return ci%MAX_P;
+}
