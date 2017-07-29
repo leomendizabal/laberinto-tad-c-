@@ -3,6 +3,7 @@
 void CrearPersona(Persona &p,long int cedula,string nombre)
 {
    setCedula(p,cedula);
+   strcrear(p.nombre);
    setNombre(p,nombre);
    setCantP(p,0);
    CrearLista(p.paseos);
