@@ -7,14 +7,17 @@ void LeerCantidadConexion(Grafo &g){
         printf("Ingrese cantidad de conexiones (0-Para salir): ");
         scanf("%d",&m);
         if(validarConexiones(m)){
-            salir = true;
             InicializarConexiones(g,m);
+            salir = true;
+            m = 0;
         }else{
             if(m != 0){
               printf("Ingrese al menos %d conexiones.\n",N);
+            }else{
+                salir = true;
             }
         }
-    }while(m == 0 || !salir);
+    }while(m != 0 || !salir);
 
 }
 
