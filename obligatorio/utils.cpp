@@ -17,7 +17,7 @@ void ImprimirIndice(int n){
     for(int i = 0; i < n; i++){
        printf("%d|",i);
     }
-    printf("\n\n");
+    printf("\n");
 }
 
 int dispercion(long int ci){

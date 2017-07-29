@@ -1,6 +1,6 @@
 #include "controlador.h"
 
-void LeerCantidadConexion(Grafo &g){
+void LeerCantidadConexion(Laberinto &g){
     int m = 0;
     bool salir = false;
     do{
@@ -21,12 +21,12 @@ void LeerCantidadConexion(Grafo &g){
 
 }
 
-void MostrarLaberinto(Grafo g){
+void MostrarLaberinto(Laberinto g){
     ImprimirIndice(N);
     ImprimirGrafo(g);
 }
 
-void InicializarConexiones(Grafo &g,int conexiones)
+void InicializarConexiones(Laberinto &g,int conexiones)
 {
     int i = 0;
     int randomI = 0;
@@ -52,7 +52,7 @@ bool validarConexiones(int m){
     return (m >= N && m <= getMaxNumber(N));
 }
 
-void RegistrarPersona(Diccionario &d){
+void RegistrarPersona(Personas &d){
     long ci;
     printf("Ingrese cedula: ");
     scanf("%ld", &ci);
@@ -72,7 +72,7 @@ void RegistrarPersona(Diccionario &d){
 }
 
 
-void ListarPersonasPorPasos(Diccionario d){
+void ListarPersonasPorPasos(Personas d){
      int p;
       if(!Empty(d)){
          printf("Ingrese cantidad de pasos: ");
@@ -83,7 +83,7 @@ void ListarPersonasPorPasos(Diccionario d){
       }
 }
 
-void ListarPaseos(Diccionario d){
+void ListarPaseos(Personas d){
     long int ci;
     printf("Ingrese cedula: ");
     scanf("%ld", &ci);
@@ -98,7 +98,7 @@ void ListarPaseos(Diccionario d){
         printf("La persona no existe\n");
 }
 
-void PersonaMayorCantidadPaseos(Diccionario d){
+void PersonaMayorCantidadPaseos(Personas d){
 
     if(!Empty(d)){
         Persona maxWalker = GetMaxWalker(d);
@@ -109,7 +109,7 @@ void PersonaMayorCantidadPaseos(Diccionario d){
     }
 }
 
-void EjecutarCamino(Grafo g, Diccionario &d){
+void EjecutarCamino(Laberinto g, Personas &d){
         // Declaraciones
         Persona p;
         Paseo paseo;

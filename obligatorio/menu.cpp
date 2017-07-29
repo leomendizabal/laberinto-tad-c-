@@ -83,7 +83,7 @@ void MenuPrincipal(int &opcion)
     scanf("%d",&opcion);
 }
 
-void EjecutarAccion(Grafo &g, Diccionario &d, int accion){
+void EjecutarAccion(Laberinto &g, Personas &d, int accion){
     switch(accion)
     {
     case OPCION_MENU_1:

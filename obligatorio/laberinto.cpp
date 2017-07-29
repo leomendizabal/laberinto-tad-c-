@@ -1,6 +1,6 @@
-#include "grafo.h"
+#include "laberinto.h"
 
-void Crear(Grafo &g)
+void Crear(Laberinto &g)
 {
     for(int i=0; i<N; i++)
     {
@@ -12,18 +12,18 @@ void Crear(Grafo &g)
 
 }
 
-bool PerteneceVertice(Grafo g, int v)
+bool PerteneceVertice(Laberinto g, int v)
 {
     return v >= 0  && v <= N;
 
 }
 
-bool PerteneceArista(Grafo g, int v1, int v2)
+bool PerteneceArista(Laberinto g, int v1, int v2)
 {
     return g[v1][v2] == 1;
 }
 
-void InsertarArista(Grafo &g, int i,int j)
+void InsertarArista(Laberinto &g, int i,int j)
 {
 
     if(i != j)
@@ -38,7 +38,7 @@ void InsertarArista(Grafo &g, int i,int j)
 
 }
 
-int GradoVertice(Grafo g,int v)
+int GradoVertice(Laberinto g,int v)
 {
     int cont =0;
     for(int i=0; i<N; i++)
@@ -48,7 +48,7 @@ int GradoVertice(Grafo g,int v)
     return cont;
 }
 
-void ImprimirGrafo(Grafo g)
+void ImprimirGrafo(Laberinto g)
 {
     for(int i=0; i<N; i++)
     {
@@ -62,7 +62,7 @@ void ImprimirGrafo(Grafo g)
 }
 
 
-void RecorrerCamino(Grafo G, int u, int v, int &p)
+void RecorrerCamino(Laberinto G, int u, int v, int &p)
 {
     int dist = 0;
     bool visitado [N];
@@ -79,7 +79,7 @@ void RecorrerCamino(Grafo G, int u, int v, int &p)
 
 }
 
-void DFS(Grafo G, int actual, int v, bool visitado [N], int & dist)
+void DFS(Laberinto G, int actual, int v, bool visitado [N], int & dist)
 {
     visitado [actual] = true;
     int j = 0;

@@ -1,26 +1,26 @@
 #ifndef CONTROLADOR_H_INCLUDED
 #define CONTROLADOR_H_INCLUDED
-#include "diccionario.h"
-#include "grafo.h"
+#include "personas.h"
+#include "laberinto.h"
 #include "utils.h"
 
 
-void LeerCantidadConexion(Grafo &g);
+void LeerCantidadConexion(Laberinto &g);
 
-void MostrarLaberinto(Grafo g);
+void MostrarLaberinto(Laberinto g);
 
-void InicializarConexiones(Grafo &g,int conexiones);
+void InicializarConexiones(Laberinto &g,int conexiones);
 
 bool validarConexiones(int m);
 
-void RegistrarPersona(Diccionario &d);
+void RegistrarPersona(Personas &d);
 
-void ListarPersonasPorPasos(Diccionario d);
+void ListarPersonasPorPasos(Personas d);
 
-void PersonaMayorCantidadPaseos(Diccionario d);
+void PersonaMayorCantidadPaseos(Personas d);
 
-void ListarPaseos(Diccionario d);
+void ListarPaseos(Personas d);
 
-void EjecutarCamino(Grafo g, Diccionario &d);
+void EjecutarCamino(Laberinto g, Personas &d);
 
 #endif // CONTROLADOR_H_INCLUDED

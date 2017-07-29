@@ -1,12 +1,12 @@
-#include "diccionario.h"
+#include "personas.h"
 
-void Make(Diccionario &d){
+void Make(Personas &d){
     for(int i=0; i<MAX_P; i++){
         d[i] = NULL;
     }
 }
 
-bool Member(Diccionario d, long clave){
+bool Member(Personas d, long clave){
     bool result = false;
     int pos = dispercion(clave);
     Lista aux = d[pos];
@@ -21,7 +21,7 @@ bool Member(Diccionario d, long clave){
     return result;
 }
 
-void Insert(Diccionario &d, Persona p){
+void Insert(Personas &d, Persona p){
     int pos = dispercion(getCedula(p));
     Lista aux;
     Lista l = d[pos];
@@ -32,7 +32,7 @@ void Insert(Diccionario &d, Persona p){
     d[pos] = aux;
 }
 
-Persona Find(Diccionario d, long clave){
+Persona Find(Personas d, long clave){
     int pos = dispercion(clave);
     Lista aux = d[pos];
 
@@ -43,7 +43,7 @@ Persona Find(Diccionario d, long clave){
     return aux->info;
 }
 
-void Modify(Diccionario &d, Persona p){
+void Modify(Personas &d, Persona p){
     int pos = dispercion(getCedula(p));
     Lista aux = d[pos];
 
@@ -54,7 +54,7 @@ void Modify(Diccionario &d, Persona p){
     aux->info = p;
 }
 
-void Delete(Diccionario &d, long clave){
+void Delete(Personas &d, long clave){
     int pos = dispercion(clave);
     Lista aux = d[pos];
 
@@ -72,7 +72,7 @@ void Delete(Diccionario &d, long clave){
     }
 }
 
-bool Empty(Diccionario d){
+bool Empty(Personas d){
     bool isEmpty = true;
     int i=0;
 
@@ -86,7 +86,7 @@ bool Empty(Diccionario d){
     return isEmpty;
 }
 
-Persona GetMaxWalker(Diccionario d){
+Persona GetMaxWalker(Personas d){
     Persona maxWalker;
     int x=0;
     bool existe= d[x] != NULL;
@@ -111,7 +111,7 @@ Persona GetMaxWalker(Diccionario d){
     return maxWalker;
 }
 
-void FindByStep(Diccionario d,int p){
+void FindByStep(Personas d,int p){
 
     for(int i = 0; i < MAX_P; i++){
         Lista peoples = d[i];

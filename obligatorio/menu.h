@@ -20,6 +20,6 @@ int ValidarIndice(int indice);
 
 void MenuPrincipal(int &opcion);
 
-void EjecutarAccion(Grafo &g, Diccionario &d, int accion);
+void EjecutarAccion(Laberinto &g, Personas &d, int accion);
 
 #endif // MENU_H_INCLUDED

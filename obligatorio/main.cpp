@@ -9,8 +9,8 @@ int main()
     //Declaraciones
     bool salir = false;
     int opcion = -1;
-    Grafo g;
-    Diccionario d;
+    Laberinto g;
+    Personas d;
     Crear(g);
     Make(d);
 
